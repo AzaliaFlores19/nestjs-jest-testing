@@ -32,7 +32,7 @@ describe('ProductsController', () => {
   describe('findOne', () => {
     it('should return one product', async () => {
       const product = { id: 1, name: 'Crema Hidratante', price: 400 };
-0
+
       jest.spyOn(service, 'findOne').mockResolvedValue(product);
 
       expect(await controller.findOne(1)).toBe(product);
